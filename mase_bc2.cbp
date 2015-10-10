@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="mase_bc2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Header Files/;Header Files/Network/;Source Files/;Header Files/Framework/;Header Files/Network/;Header Files/Framework/;Source Files/Framework/;Header Files/Framework/;Source Files/;Header Files/Network/Http/;Header Files/Network/Socket/;Source Files/;Source Files/;Source Files/Network/;Source Files/Network/Http/;Source Files/Network/Socket/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/mase_bc2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/mase_bc2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=gnu++11" />
+			<Add directory="$(BOOST_1_54_DIR)" />
+			<Add directory="$(OPEN_SSL_DIR)include" />
+			<Add directory="./source" />
+		</Compiler>
+		<Linker>
+			<Add option="-lpthread" />
+			<Add library="libboost_system.a" />
+			<Add library="libboost_filesystem.a" />
+			<Add library="libboost_random.a" />
+			<Add library="libssl.a" />
+			<Add library="libcrypto.a" />
+			<Add directory="$(OPEN_SSL_DIR)lib" />
+			<Add directory="$(BOOST_1_54_DIR)lib" />
+		</Linker>
+		<Unit filename="main.cpp">
+			<Option virtualFolder="Source Files/" />
+		</Unit>
+		<Unit filename="source/Base64.cpp">
+			<Option virtualFolder="Source Files/Network/" />
+		</Unit>
+		<Unit filename="source/Base64.h">
+			<Option virtualFolder="Header Files/Network/" />
+		</Unit>
+		<Unit filename="source/Framework/Config.cpp">
+			<Option virtualFolder="Source Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/Config.h">
+			<Option virtualFolder="Header Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/Database.cpp">
+			<Option virtualFolder="Source Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/Database.h">
+			<Option virtualFolder="Header Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/Framework.cpp">
+			<Option virtualFolder="Source Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/Framework.h">
+			<Option virtualFolder="Header Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/GameClient.cpp">
+			<Option virtualFolder="Source Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/GameClient.h">
+			<Option virtualFolder="Header Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/GameServer.cpp">
+			<Option virtualFolder="Source Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/GameServer.h">
+			<Option virtualFolder="Header Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/Logger.cpp">
+			<Option virtualFolder="Source Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/Logger.h">
+			<Option virtualFolder="Header Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/Stats.cpp">
+			<Option virtualFolder="Source Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Framework/Stats.h">
+			<Option virtualFolder="Header Files/Framework/" />
+		</Unit>
+		<Unit filename="source/Network/Http/HttpConnection.cpp">
+			<Option virtualFolder="Source Files/Network/Http/" />
+		</Unit>
+		<Unit filename="source/Network/Http/HttpConnection.h">
+			<Option virtualFolder="Header Files/Network/Http/" />
+		</Unit>
+		<Unit filename="source/Network/Http/Reply.cpp">
+			<Option virtualFolder="Source Files/Network/Http/" />
+		</Unit>
+		<Unit filename="source/Network/Http/Reply.h">
+			<Option virtualFolder="Header Files/Network/Http/" />
+		</Unit>
+		<Unit filename="source/Network/Http/RequestHandler.cpp">
+			<Option virtualFolder="Source Files/Network/Http/" />
+		</Unit>
+		<Unit filename="source/Network/Http/RequestHandler.h">
+			<Option virtualFolder="Header Files/Network/Http/" />
+		</Unit>
+		<Unit filename="source/Network/Http/RequestParser.cpp">
+			<Option virtualFolder="Source Files/Network/Http/" />
+		</Unit>
+		<Unit filename="source/Network/Http/RequestParser.h">
+			<Option virtualFolder="Header Files/Network/Http/" />
+		</Unit>
+		<Unit filename="source/Network/HttpServer.cpp">
+			<Option virtualFolder="Source Files/Network/Socket/" />
+		</Unit>
+		<Unit filename="source/Network/HttpServer.h">
+			<Option virtualFolder="Header Files/Network/Socket/" />
+		</Unit>
+		<Unit filename="source/Network/Packet.cpp">
+			<Option virtualFolder="Source Files/Network/" />
+		</Unit>
+		<Unit filename="source/Network/Packet.h">
+			<Option virtualFolder="Header Files/Network/" />
+		</Unit>
+		<Unit filename="source/Network/TcpConnection.cpp">
+			<Option virtualFolder="Source Files/Network/Socket/" />
+		</Unit>
+		<Unit filename="source/Network/TcpConnection.h">
+			<Option virtualFolder="Header Files/Network/Socket/" />
+		</Unit>
+		<Unit filename="source/Network/TcpConnectionSSL.cpp">
+			<Option virtualFolder="Source Files/Network/Socket/" />
+		</Unit>
+		<Unit filename="source/Network/TcpConnectionSSL.h">
+			<Option virtualFolder="Header Files/Network/Socket/" />
+		</Unit>
+		<Unit filename="source/Network/TcpServer.cpp">
+			<Option virtualFolder="Source Files/Network/Socket/" />
+		</Unit>
+		<Unit filename="source/Network/TcpServer.h">
+			<Option virtualFolder="Header Files/Network/Socket/" />
+		</Unit>
+		<Unit filename="source/Network/UdpServer.cpp">
+			<Option virtualFolder="Source Files/Network/Socket/" />
+		</Unit>
+		<Unit filename="source/Network/UdpServer.h">
+			<Option virtualFolder="Header Files/Network/Socket/" />
+		</Unit>
+		<Unit filename="source/SSL_cert.h">
+			<Option virtualFolder="Header Files/Network/" />
+		</Unit>
+		<Unit filename="source/main.h">
+			<Option virtualFolder="Header Files/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

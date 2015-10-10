@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Framework">
+      <UniqueIdentifier>{6026c56f-ded0-4a36-a0bf-45e7d300c8d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework">
+      <UniqueIdentifier>{a9faa312-5e9a-4289-885e-11be12efc83c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network">
+      <UniqueIdentifier>{ab1e8e7a-2671-4522-b79c-ec01aef37c1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network\Socket">
+      <UniqueIdentifier>{2533f117-319b-47cc-84a0-400a323f7088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network">
+      <UniqueIdentifier>{b8c8da61-1a23-47f4-bbe7-ec34fc000040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network\Socket">
+      <UniqueIdentifier>{4280d3ad-5176-46fa-bbae-8e5125e49603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network\Http">
+      <UniqueIdentifier>{11570fb7-cc74-4a2e-a5b4-c953428288c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network\Http">
+      <UniqueIdentifier>{8fbf55f1-7ad3-4de9-b6a9-7ceca9712a8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Framework\Config.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Framework\Database.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Framework\Framework.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Framework\GameClient.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Framework\GameServer.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Framework\Logger.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Framework\Stats.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Network\Packet.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Network\TcpServer.h">
+      <Filter>Header Files\Network\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Network\UdpServer.h">
+      <Filter>Header Files\Network\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Base64.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SSL_cert.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Network\TcpConnection.h">
+      <Filter>Header Files\Network\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Network\TcpConnectionSSL.h">
+      <Filter>Header Files\Network\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Network\HttpServer.h">
+      <Filter>Header Files\Network\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Network\http\HttpConnection.h">
+      <Filter>Header Files\Network\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Network\http\Reply.h">
+      <Filter>Header Files\Network\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Network\http\RequestHandler.h">
+      <Filter>Header Files\Network\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Network\http\RequestParser.h">
+      <Filter>Header Files\Network\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Framework\Config.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Framework\Database.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Framework\Framework.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Framework\GameClient.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Framework\GameServer.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Framework\Logger.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Framework\Stats.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Network\TcpServer.cpp">
+      <Filter>Source Files\Network\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Network\UdpServer.cpp">
+      <Filter>Source Files\Network\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Network\Packet.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Base64.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Network\TcpConnection.cpp">
+      <Filter>Source Files\Network\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Network\TcpConnectionSSL.cpp">
+      <Filter>Source Files\Network\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Network\HttpServer.cpp">
+      <Filter>Source Files\Network\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Network\http\HttpConnection.cpp">
+      <Filter>Source Files\Network\Http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Network\http\Reply.cpp">
+      <Filter>Source Files\Network\Http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Network\http\RequestHandler.cpp">
+      <Filter>Source Files\Network\Http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Network\http\RequestParser.cpp">
+      <Filter>Source Files\Network\Http</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
